@@ -1,54 +1,62 @@
-import math
+import numpy as np
+Nx = 10
+Ny = 10
+velx = np.zeros((Nx,Ny))
+auxVx = []
+p = 1
+h=1
+w=1
+for i in range(Nx):
+    auxVx.append([])
+    for j in range(Ny):
+        if(j==0):
+            velx[i][j]=1
+        auxVx[i].append(((j+1)))
 
 
 
+for i in range(1,Nx-1):
+    for j in range(1,Ny-1):
+        velx[i][j] = velx[i][j] + w * 1/4*(auxVx[i+1][j]+auxVx[i-1][j]+auxVx[i][j+1]+auxVx[i][j-1]
+                                       -(h/2)*velx[i][j]*(auxVx[i+1][j]-auxVx[i-1][j])
+                                       -(h/2)*velx[i][j]*(auxVx[i][j+1]-auxVx[i][j-1])
+                                       -(h/2)*p*p)-velx[i][j]
 
 
-def segundaDerivadaX(y,x,x1,x2,h):
-    return [(x2-2(x1)+y)/h**2,0]
+print(velx)
+""""
+vx = [[1,0,0,0],
+      [1,0,0,0],
+      [1,0,0,0],
+      [1,0,0,0]]
 
-def segundaDerivadaY(x,y,y1,y2,h):
-    return [0,(y2-2(y1)+y)/h**2]
+r = [[0,0,0,0],
+      [0,0,0,0],
+      [0,0,0,0],
+      [0,0,0,0]]
+pMasI = 5
+PMenosI = 9
 
-def primeraDerivadaY(x,y,y1,h):
-    return [0,(y1+y)/h**2]
+def prueba1r(h):
+    for i in range(0,len(vx)-1):
+        for j in range(0,len(vx)-1):
+          r[i][j]=  ((1/4)*vx[i+1][j]+
+            (1/4)*vx[i-1][j]
+            +(1/4)*vx[i][j+1]
+            +(1/4)*vx[i][j-1]
+            -((1/4)*(h/2)*vx[i][j]*vx[i+1][j])+((1/4)*(h/2)*vx[i][j]*vx[i-1][j])
+            -((1/4)*(h/2)*vx[i][j]*vx[i][j+1])+((1/4)*(h/2)*vx[i][j]*vx[i][j-1])
+            -((1/4)*(h/2)*pMasI)+((1/4)*(h/2)*PMenosI))   - vx[i][j]
 
-def primeraDerivadaX(y,x,x1,h):
-    return [(x1+x)/h**2,0]
+prueba1r(1)
 
-def presionX(x,x1,y,h):
-    return [(x1-x)/h**2,0]
+def pruebavx(w):
+    for i in range(0,len(vx)):
+        for j in range(0,len(vx)):
+          vx[i][j]=  vx[i][j]   + w*r[i][j]        
 
-def presionY(y,y1,x,h):
-    return [0,(y1-y)/h**2]
+pruebavx(2)
 
-
-
-
-
-
+print(vx)
 """
-def euler(t0, y0, h, n):
-    ts = [t0]
-    ys = [y0]
-    for i in range(n):
 
-
-aux_y = ys[-1] + round(h * ((ts[-1]) + ys[-1], 15))
-aux_t = ts[-1] + h
-ys.append(aux_y)
-ts.append(aux_t)
-
-return ys
-
-if __name__ == '__main__':
-    print(euler(0, 0, 0.1, 5))
-"""
-#""""
-def segundaDerivadaParcialDe(funcion,x,y,h,derivar):
-    if(derivar == "X"):
-        return (funcion(x+2*h,y)-2*funcion(x+h,y)+funcion(x,y))/h**2
-    else:
-        return (funcion(x,y+2*h)-2*funcion(x,y+h)+funcion(x,y))/h**2
-
-"""

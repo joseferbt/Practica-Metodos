@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52c9c4e8-9f5f-4ed4-a8fc-f3e8522f2626" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beam.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discretizacion.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bolzano algoritm.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <list id="ca4aa410-ff87-4038-bf19-6a27dc65fc41" name="Changes by User" comment="" />
@@ -132,7 +129,8 @@
       <workItem from="1639075207389" duration="406000" />
       <workItem from="1639229402664" duration="7653000" />
       <workItem from="1639313769062" duration="1286000" />
-      <workItem from="1639599506219" duration="57000" />
+      <workItem from="1639599506219" duration="197000" />
+      <workItem from="1640018472728" duration="237000" />
     </task>
     <servers />
   </component>

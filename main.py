@@ -2,11 +2,11 @@ import numpy as np
 #import pip pip.main(["install","matplotlib"])
 import matplotlib.pylab as p
 
-Nx = 10
-Ny = 10
+Nx = 20
+Ny = 20
 vy = np.zeros((Nx + 1, Ny + 1), float)
 vx = np.zeros((Nx + 1, Ny + 1), float)
-grid = np.zeros(Nx+1,Ny+1)
+grid = np.zeros((Nx  +1, Ny +1))
 iter = 0
 pMasI = 1
 PMenosI = 1
@@ -14,8 +14,8 @@ h = 1.0
 w = 1.0
 vo = 1.0
 a = " "
-for i in range(Nx-5,Nx+1):
-    for j in range(Ny -5, Ny+1):
+for i in range(Nx//4,Nx//2):
+    for j in range(0, Ny//4):
         grid[i][j] = 1
 
 for i in range(Nx):
@@ -43,7 +43,7 @@ def prueba1r(w, h):
                 vx[i][j] = vx[i][j] + r1
 
 
-while (iter <= 6):
+while (iter <= 1):
     iter += 1
     if iter % 10 == 0: print(iter)
     prueba1r(w, h)

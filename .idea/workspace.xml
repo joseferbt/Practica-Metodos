@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52c9c4e8-9f5f-4ed4-a8fc-f3e8522f2626" name="Changes" comment="">
+    <list default="true" id="52c9c4e8-9f5f-4ed4-a8fc-f3e8522f2626" name="Changes" comment="grid funcionando">
+      <change afterPath="$PROJECT_DIR$/modeloXY.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -133,8 +134,20 @@
       <workItem from="1639599506219" duration="197000" />
       <workItem from="1640018472728" duration="237000" />
       <workItem from="1642092544299" duration="468000" />
-      <workItem from="1642093407660" duration="823000" />
+      <workItem from="1642093407660" duration="1073000" />
+      <workItem from="1642357726389" duration="3327000" />
+      <workItem from="1642465003307" duration="4354000" />
+      <workItem from="1644846325575" duration="54000" />
+      <workItem from="1645059364294" duration="3033000" />
     </task>
+    <task id="LOCAL-00001" summary="grid funcionando">
+      <created>1642094262840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642094262840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +165,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="grid funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid funcionando" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pactica_Metodos$main.coverage" NAME="main Coverage Results" MODIFIED="1642094077892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pactica_Metodos$beam.coverage" NAME="main Coverage Results" MODIFIED="1642468233381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pactica_Metodos$main.coverage" NAME="main Coverage Results" MODIFIED="1645061683162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
